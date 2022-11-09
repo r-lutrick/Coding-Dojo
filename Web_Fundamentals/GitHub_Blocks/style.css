@@ -1,0 +1,34 @@
+.container {
+    background-color: lightgrey;
+    width: 50%;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.container-div {
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px;
+    padding: 15px;
+}
+
+.img_properties {
+    height: 150px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.salmonbackground {
+    background-color: lightsalmon;
+}
+
+.greenish {
+    background-color: lightseagreen;
+}
+
+.footer {
+    text-align: center;
+}
