@@ -5,12 +5,14 @@
 
     padding: 15px;
 }
+
 .top-nav {
     height: 150px;
     background-color: green;
 
     margin-bottom: 15px;
 }
+
 .side-nav {
     height: 300px;
     width: 200px;
@@ -20,6 +22,7 @@
     margin-right: 10px;
     display: inline-block;
 }
+
 .main {
     height: 400px;
     width: 700px;
@@ -29,6 +32,7 @@
     display: inline-block;
     vertical-align: top;
 }
+
 .sub-content {
     height: 200px;
     width: 210px;
@@ -37,6 +41,7 @@
     display: inline-block;
     margin: 5px;
 }
+
 #advertisement {
     height: 120px;
     width: 660px;
