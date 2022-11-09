@@ -1,0 +1,44 @@
+.container {
+    height: 525px;
+    width: 900px;
+    border: 2px solid black;
+}
+
+.top {
+    display: flex;
+    height: 300px;
+    width: 900px;
+}
+
+.bottom {
+    height: 300px;
+    width: 900px;
+}
+
+.left {
+    display: flex;
+    background-color: #0000a8;
+    padding-left: 50px;
+    padding-top: 25px;
+    width: 450px;
+}
+
+.right {
+    width: 450px;
+}
+
+.red {
+    background-color: red;
+    height: 12.5%;
+}
+
+.white {
+    background-color: rgb(255, 255, 255);
+    height: 12.5%;
+}
+
+img {
+    height: 75%;
+    margin: 25px 50px;
+}
+
