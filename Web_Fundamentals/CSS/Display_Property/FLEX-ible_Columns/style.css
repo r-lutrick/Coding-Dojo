@@ -1,0 +1,32 @@
+* {
+    /* width: 0px; */
+    /* height: 0px; */
+}
+.row {
+    display: flex;
+    /* align-items: center; */
+}
+.col {
+    flex: 1;
+    padding: 20px;
+    margin: 10px;
+    background-color: teal;
+    color: white;
+    font-size: 2em;
+}
+.col-2 {
+    flex: 2;
+    padding: 20px;
+    margin: 10px;
+    background-color: teal;
+    color: white;
+    font-size: 2em;
+}
+.col-3 {
+    flex: 3;
+    padding: 20px;
+    margin: 10px;
+    background-color: teal;
+    color: white;
+    font-size: 2em;
+}
