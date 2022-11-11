@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+/* 
+Objectives
+Practice using display: flex;
+Practice using align-items and justify-content
+*/
+* {
+    /* height: 0px;
+    width: 0px; */
+    font-family: 'Roboto';
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.nav {
+    background-color:rgb(68, 68, 68);
+    height: 55px;
+    padding: 0px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-title {
+    width: fit-content;
+    color: white;
+    font-weight: lighter;
+}
+.nav-links {
+    list-style: none;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-links li {
+    margin: 0px 15px;
+    font-size: smaller;
+    font-weight:lighter;
+}
+.active {
+    font-size: 110%;
+}
+.btn {
+    background-color:rgb(52, 155, 180);
+    color: white;
+    padding: 5px 15px;
+    box-shadow: 5px 5px black;
+    font-size: larger;
+}
