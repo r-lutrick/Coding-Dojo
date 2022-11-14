@@ -1,65 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Dojonary</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dojonary</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-    <div class="container">
-        <div class="side"></div>
-        <div class="col3">
-            <div class="container_navbar">
-                <h1>Dojonary</h1>
-                <input type="text" placeholder="Search">
-                <button onclick="loginOut(this)">Login</button>
-            </div>
-        </div>
-        <div class="side"></div>
-    </div>
-    <div class="container">
-        <div class="side"></div>
-        <div class="col2">
-            <div class="col2_card">
-                <div class="card_left">
-                    <p class="word">ninja</p>
-                    <p class="type">noun</p>
-                    <p class="plural">Plural: <span>ninjas</span></p>
-                    <button onclick="like(this)">13 likes</button>
+    <body>
+        <div class="container">
+            <div class="side"></div>
+            <div class="col3">
+                <div class="container_navbar">
+                    <h1>Dojonary</h1>
+                    <input type="text" placeholder="Search" />
+                    <button onclick="loginOut(this)">Login</button>
                 </div>
-                <div class="card_right">
-                    <p class="definition">
-                        A practitioner skilled in the <span><a href="#">Japanese</a></span> art of <span><a href="#">ninjutsu</a></span>
+            </div>
+            <div class="side"></div>
+        </div>
+        <div class="container">
+            <div class="side"></div>
+            <div class="col2">
+                <div class="col2_card">
+                    <div class="card_left">
+                        <p class="word">ninja</p>
+                        <p class="type">noun</p>
+                        <p class="plural">Plural: <span>ninjas</span></p>
+                        <button onclick="like(this)">13 likes</button>
+                    </div>
+                    <div class="card_right">
+                        <p class="definition">
+                            A practitioner skilled in the
+                            <span><a href="#">Japanese</a></span> art of
+                            <span><a href="#">ninjutsu</a></span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col2_card">
+                    <div class="card_left">
+                        <p class="word">ninja</p>
+                        <p class="type">noun</p>
+                        <p class="plural">Plural: <span>ninjas</span></p>
+                        <button onclick="like(this)">37 likes</button>
+                    </div>
+                    <div class="card_right">
+                        <p class="definition">
+                            A <span><a href="#">programmer</a></span> who breaks
+                            down problems with <span><a href="#">zen</a></span
+                            >-like focus
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col1">
+                <div class="col1_card">
+                    <p class="card_define">
+                        Dojonary is defined by <span>YOU</span>
                     </p>
+                    <button onclick="addDefinition(this)">
+                        Add Definition
+                    </button>
                 </div>
             </div>
-            <div class="col2_card">
-                <div class="card_left">
-                    <p class="word">ninja</p>
-                    <p class="type">noun</p>
-                    <p class="plural">Plural: <span>ninjas</span></p>
-                    <button onclick="like(this)">37 likes</button>
-                </div>
-                <div class="card_right">
-                    <p class="definition">
-                        A <span><a href="#">programmer</a></span> who breaks down problems with <span><a href="#">zen</a></span>-like focus
-                    </p>
-                </div>
-            </div>
+            <div class="side"></div>
         </div>
-        <div class="col1">
-            <div class="col1_card">
-                <p class="card_define">Dojonary is defined by <span>YOU</span></p>
-                <button onclick="addDefinition(this)">Add Definition</button>
-            </div>
-        </div>
-        <div class="side"></div>
-    </div>
-    <script src="script.js"></script>
-</body>
-
+        <script src="script.js"></script>
+    </body>
 </html>
