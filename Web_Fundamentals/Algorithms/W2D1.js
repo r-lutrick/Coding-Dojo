@@ -34,5 +34,6 @@ function oracle (arr) {
     var i = Math.floor(Math.random() * arr.length);
     return arr[i]
 }
+
 var quote = oracle(lifesAnswers)
 console.log(quote)
