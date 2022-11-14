@@ -35,5 +35,4 @@ function oracle (arr) {
     return arr[i]
 }
 
-var quote = oracle(lifesAnswers)
-console.log(quote)
+console.log(oracle(lifesAnswers))
