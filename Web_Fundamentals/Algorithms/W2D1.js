@@ -1,6 +1,6 @@
 function d6() {
     var roll = Math.random();
-    roll = Math.ceil(roll*6)
+    roll = Math.ceil(roll*6) //Ceiling is used here due to it not including 0. Floor could be used but a +1 would be needed because floor includes 0
     return roll;
 }
     
@@ -31,7 +31,7 @@ var lifesAnswers = [
 ];
 
 function oracle (arr) {
-    var i = Math.floor(Math.random() * arr.length);
+    var i = Math.floor(Math.random() * arr.length); // using arr.length allows for different sized arrays. Floor is used here because we want to include the 0.
     return arr[i]
 }
 
