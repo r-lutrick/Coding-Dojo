@@ -6,6 +6,6 @@ function addDefinition(element) {
     element.remove();
 }
 
-function like(element) {
+function like() {
     alert("Ninja was liked");
 }
