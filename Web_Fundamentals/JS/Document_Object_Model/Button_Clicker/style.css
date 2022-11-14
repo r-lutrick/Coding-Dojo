@@ -1,0 +1,105 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    min-width: 1080px;
+}
+.container {
+    display: flex;
+}
+.side {
+    flex: .5;
+}
+.col1 {
+    flex: 1;
+}
+.col2 {
+    flex: 2;
+}
+.col3 {
+    flex: 3;
+}
+/* Container 1 */
+.container_navbar {
+    background-color: lightgrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+}
+.container_navbar h1 {
+    display: block;
+}
+.container_navbar input {
+    width: 400px;
+    padding: 3px;
+}
+.container_navbar button {
+    color: white;
+    background-color: rgb(55, 87, 185);
+    padding: 3px 15px;
+    box-shadow: 3px 3px black;
+}
+/* Container 2 */
+.col2_card {
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    margin: 0px 20px 20px 0px;
+}
+.card_left {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* width: 20%; */
+    margin: 10px 20px;
+}
+.card_left * {
+    margin: 2px;
+}
+.card_left button {
+    background-color: gold;
+    padding: 3px 15px;
+    margin: 10px 0px;
+    box-shadow: 3px 3px black;
+}
+.definition {
+    font-size: 2em;
+}
+.word {
+    font-weight: bolder;
+    font-size: 2em;
+}
+.type {
+    font-style: italic;
+    font-weight: bolder;
+}
+.plural {
+    width: fit-content;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+.plural span {
+    font-style: italic;
+}
+.col1_card {
+    border: 2px solid black;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+}
+.col1_card p {
+    font-size: 2em;
+}
+.col1_card span {
+    font-weight: bolder;
+}
+.col1_card button {
+    padding: 5px 0px;
+    box-shadow: 3px 3px;
+    margin: 5px 0px;
+    font-size: 1.25em;
+    background-color:rgb(144, 196, 140);
+}
