@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Likes</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="titleBar">
+                <h1>Network</h1>
+                <h1>Your Feed</h1>
+            </div>
+            <div class="colContainer">
+                <div class="col1">
+                    <div class="card_profile">
+                        <img src="#" alt="Profile Pic" />
+                        <a href="#">Add an avatar</a>
+                        <p>James Doe</p>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="card_post">
+                        <div class="post_title">
+                            <p>Neil M</p>
+                            <p><span id="neilsLikes">0</span> like(s)</p>
+                            <button onclick="likeButtonPress('#neilsLikes')">
+                                Like
+                            </button>
+                        </div>
+                        <div class="post_content">
+                            <p>
+                                I just set up this new discord bot, let me know
+                                what you all think. <a href="#">link</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card_post">
+                        <div class="post_title">
+                            <p>Nichole K</p>
+                            <p><span id="nicolesLikes">0</span> like(s)</p>
+                            <button onclick="likeButtonPress('#nicolesLikes')">
+                                Like
+                            </button>
+                        </div>
+                        <div class="post_content">
+                            <p>
+                                Just finished my <a href="#">next comic</a>,
+                                check it out.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

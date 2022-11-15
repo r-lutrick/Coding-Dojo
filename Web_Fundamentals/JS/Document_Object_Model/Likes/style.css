@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: "Roboto";
+}
+body {
+    min-width: 1000px;
+}
+.container {
+    width: 750px;
+    margin: 0px auto;
+}
+.titleBar {
+    flex: 4;
+}
+.titleBar h1 {
+    padding: 15px 25px;
+    text-align: center;
+    font-weight: lighter;
+}
+.titleBar h1:first-child {
+    text-align: start;
+    background-color: black;
+    color: white;
+}
+.colContainer {
+    display: flex;
+}
+.col1 {
+    flex: 1;
+}
+.col3 {
+    flex: 3;
+}
