@@ -9,9 +9,10 @@ body {
     display: flex;
 }
 .side {
-    flex: .5;
+    flex: 0.5;
 }
 .col1 {
+    /* background-color: pink; */
     flex: 1;
 }
 .col2 {
@@ -22,7 +23,8 @@ body {
 }
 /* Container 1 */
 .container_navbar {
-    background-color: lightgrey;
+    background-color: black;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -101,5 +103,5 @@ body {
     box-shadow: 3px 3px;
     margin: 5px 0px;
     font-size: 1.25em;
-    background-color:rgb(144, 196, 140);
+    background-color: rgb(144, 196, 140);
 }
