@@ -3,7 +3,8 @@
     margin: 0px;
 }
 body {
-    min-width: 1080px;
+    /* min-width: 1080px; */
+    margin: 0px auto;
 }
 .container {
     display: flex;
