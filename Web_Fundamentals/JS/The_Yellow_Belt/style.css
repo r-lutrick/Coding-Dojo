@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+}
+
+/* TITLE */
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(75, 75, 75);
+    color: white;
+    width: 600px;
+    margin: 0px auto;
+    padding: 0px 20px;
+}
+#title-dessert {
+    color: orange;
+}
+.title button {
+    margin-right: 5px;
+    padding: 2px 5px;
+}
+.join {
+    background-color: orange;
+}
+.login {
+    background-color: rgb(53, 86, 183);
+    color: white;
+}
+
+/* SEARCH */
+.search {
+    /* background is orange with 50% transparency */
+    background-color: rgba(255, 166, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 10px 20px;
+    width: 600px;
+    margin: 0px auto;
+    margin-bottom: 10px;
+}
+.search-barbutton {
+    display: flex;
+}
+#search-bar {
+    border: 2px solid black;
+    padding: 0px 3px;
+}
+.search-button {
+    border: 2px solid black;
+    margin-left: -1px;
+    background-color: rgb(53, 86, 183);
+    color: white;
+    padding: 0px 3px;
+}
+.search-imgbox {
+    text-align: center;
+    color: black;
+}
+.search img {
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+/* CONTENT */
+.content {
+    display: flex;
+
+    width: 640px;
+    margin: 0px auto;
+}
+/* COLUMN 1 */
+.col1 {
+    flex: 2;
+    background-color: rgba(75, 75, 75, 0.1);
+    padding: 10px;
+}
+/* Title & Image */
+.rotd-titleimg {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rotd-title {
+    text-align: center;
+    margin-bottom: 10px;
+    color: blue;
+}
+.rotd-img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+/* Name & Likes of Post */
+.rotd-namelikes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.likes {
+    display: flex;
+}
+.heart {
+    height: 15px;
+    margin: 0px 10px;
+}
+/* Footer alignment */
+.rotd-recipe {
+    text-align: center;
+}
+
+/* COLUMN 2 */
+.col2 {
+    flex: 1;
+    padding: 10px;
+}
+/* Column 2 contains cards */
+.card-img {
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.card-namelikes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

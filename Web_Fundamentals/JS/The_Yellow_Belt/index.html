@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Just Dessert</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="title">
+            <h1 class="title-name">
+                Just<span id="title-dessert">Dessert</span>
+            </h1>
+            <div class="title-buttons">
+                <button class="join" onclick="joinRemover(this)">Join</button>
+                <button class="login">Login</button>
+            </div>
+        </div>
+        <div class="search">
+            <div class="search-barbutton">
+                <input
+                    type="text"
+                    name="Search"
+                    id="search-bar"
+                    placeholder="Search"
+                />
+                <button
+                    class="search-button"
+                    onclick="searchAlert('#search-bar')"
+                >
+                    Go
+                </button>
+            </div>
+            <div class="search-imgbox">
+                <img src="./imgs/cake.png" alt="Cakes" class="search-imgs" />
+                <p class="search-img-txt">Cakes</p>
+            </div>
+            <div class="search-imgbox">
+                <img
+                    src="./imgs/ice-cream.png"
+                    alt="Ice Cream"
+                    class="search-imgs"
+                />
+                <p class="search-img-txt">Ice Cream</p>
+            </div>
+            <div class="search-imgbox">
+                <img
+                    src="./imgs/cookie.png"
+                    alt="Cookies"
+                    class="search-imgs"
+                />
+                <p class="search-img-txt">Cookies</p>
+            </div>
+            <div class="search-imgbox">
+                <img src="./imgs/pie.png" alt="Pie" class="search-imgs" />
+                <p class="search-img-txt">Pie</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="col1">
+                <div class="rotd-titleimg">
+                    <h4 class="rotd-title">Recipe of the Day</h4>
+                    <img
+                        src="./imgs/orange-tart.jpg"
+                        alt="Recipe of the Day"
+                        class="rotd-img"
+                    />
+                </div>
+                <div class="rotd-namelikes">
+                    <p class="rotd-name">Orange Tea Jelly Tart</p>
+                    <div class="likes">
+                        <img
+                            src="./imgs/heart.png"
+                            alt="Heart"
+                            class="heart"
+                            onclick="loveIt('#rotd-likes')"
+                        />
+                        <p id="rotd-likes">0</p>
+                    </div>
+                </div>
+                <p class="author">
+                    by: <span><a href="#">yuripiano</a></span>
+                </p>
+                <p class="rotd-recipe">
+                    <a href="#">See Full Recipe</a>
+                </p>
+            </div>
+            <div class="col2">
+                <h4>Recommended for you:</h4>
+                <hr />
+                <!-- Card Containers have 3 Elements -->
+                <div>
+                    <img
+                        src="./imgs/macarons.jpg"
+                        alt="Macarons"
+                        class="card-img"
+                    />
+                    <div class="card-namelikes">
+                        <p class="card-name">Macarons</p>
+                        <div class="likes">
+                            <img
+                                src="./imgs/heart.png"
+                                alt="Heart"
+                                class="heart"
+                                onclick="loveIt('#card1')"
+                            />
+                            <p id="card1">0</p>
+                        </div>
+                    </div>
+                    <p class="author">
+                        by: <span><a href="#">EmilieW</a></span>
+                    </p>
+                </div>
+                <div>
+                    <img
+                        src="./imgs/creme-brulee.jpg"
+                        alt="Creme Brulee"
+                        class="card-img"
+                    />
+                    <div class="card-namelikes">
+                        <p class="card-name">Creme Brulee</p>
+                        <div class="likes">
+                            <img
+                                src="./imgs/heart.png"
+                                alt="Heart"
+                                class="heart"
+                                onclick="loveIt('#card2')"
+                            />
+                            <p id="card2">0</p>
+                        </div>
+                    </div>
+                    <p class="author">
+                        by: <span><a href="#">MarisaG</a></span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
