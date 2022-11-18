@@ -5,7 +5,6 @@ function loginOut(element) {
 function addDefinition(element) {
     element.remove();
 }
-
 function like() {
     alert("Ninja was liked");
 }
