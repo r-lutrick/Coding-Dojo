@@ -33,7 +33,7 @@ function highPass(arr, cutoff) {
     }
     return filteredArr;
 }
-var result = highPass([6, 8, 3, 10, -2, 5, 9], 5);
+// var result = highPass([6, 8, 3, 10, -2, 5, 9], 5);
 // console.log(result);                                             // we expect back [6, 8, 10, 9]
 
 
@@ -57,7 +57,7 @@ function betterThanAverage(arr) {
     }
     return count;
 }
-var result = betterThanAverage([6, 8, 3, 10, -2, 5, 9]);
+// var result = betterThanAverage([6, 8, 3, 10, -2, 5, 9]);
 // console.log(result);                                                         // we expect back 4
 
 
@@ -66,13 +66,34 @@ var result = betterThanAverage([6, 8, 3, 10, -2, 5, 9]);
 // Write a function that will reverse the values an array and return them.
 
 function reverse(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        var t = arr.pop()
-        arr.push(arr[i])
-        arr[i] = t
+    for (let i = 0; i < arr.length / 2; i++) {
+        var f = arr[i]
+        var l = arr[arr.length - i - 1]
+        arr[i] = l
+        arr[arr.length - i - 1] = f
     }
     return arr;
 }
 
-var result = reverse(["a", "b", "c", "d", "e"]);
-console.log(result);                                    // we expect back ["e", "d", "c", "b", "a"]
+// var result = reverse(["a", "b", "c", "d", "e"]);
+// console.log(result);                                    // we expect back ["e", "d", "c", "b", "a"]
+
+
+
+// Fibonacci Array
+// Fibonacci numbers have been studied for years and appear often in nature. Write a function that will
+// return an array of Fibonacci numbers up to a given length n. Fibonacci numbers are calculated by
+// adding the last two values in the sequence together. So if the 4th value is 2 and the 5th value is 3
+// then the next value in the sequence is 5.
+
+function fibonacciArray(n) {
+    // the [0, 1] are the starting values of the array to calculate the rest from
+    var fibArr = [0, 1];
+    for (let i = 2; i < n; i++) {
+        fibArr.push(fibArr[i - 2] + fibArr[i - 1])
+    }
+    return fibArr;
+}
+
+// var result = fibonacciArray(10);
+// console.log(result); // we expect back [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
