@@ -31,7 +31,7 @@ while i > 0:
 
 # Flexible Counter
 low_num = 2
-high_num = 20
+high_num = 21
 mult = 3
 for i in range(low_num, high_num+1):
     if i % mult == 0:
