@@ -2,10 +2,9 @@ from . import card
 import random
 
 class Deck:
-    cards = []
     def __init__( self ):
         suits = [ "spades" , "hearts" , "clubs" , "diamonds" ]
-        
+        self.cards = []
 
         for s in suits:
             for i in range(1,14):
@@ -26,10 +25,9 @@ class Deck:
         for card in self.cards:
             card.card_info()
 
-    @classmethod
-    def deal_card (cls):
-        selected_card = random.choice(cls.cards)
-        cls.cards.remove(selected_card)
+    def deal_card (self):
+        selected_card = random.choice(self.cards)
+        self.cards.remove(selected_card)
         return selected_card
 
 
