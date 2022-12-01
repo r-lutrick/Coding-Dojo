@@ -17,12 +17,12 @@ for i in range(2):
 
 while dealer.turn == True or player1.turn == True:
     #Player 1 turn
+    print("======- Dealers hand -======")
+    dealer.display_hand()
+    print(f"Dealer has: {dealer.get_total()}")
+    print("============================\n\n")
     while player1.turn == True:
         current_hand_value = player1.get_total()
-        print("======- Dealers hand -======")
-        dealer.display_hand()
-        print(f"Dealer has: {dealer.get_total()}")
-        print("============================\n\n")
         print("=======- Your hand -========")
         player1.display_hand()
         print(f"Player has: {current_hand_value}")
