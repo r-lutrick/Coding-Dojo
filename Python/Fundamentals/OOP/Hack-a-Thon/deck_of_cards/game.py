@@ -19,7 +19,6 @@ while dealer.turn == True or player1.turn == True:
     #Player 1 turn
     while player1.turn == True:
         current_hand_value = player1.get_total()
-
         print("======- Dealers hand -======")
         dealer.display_hand()
         print(f"Dealer has: {dealer.get_total()}")
@@ -28,7 +27,6 @@ while dealer.turn == True or player1.turn == True:
         player1.display_hand()
         print(f"Player has: {current_hand_value}")
         print("============================\n")
-
         choice = input("[1]Hit or [2]Stay:\n> ")
 
         if choice == "1":
@@ -44,10 +42,12 @@ while dealer.turn == True or player1.turn == True:
         else:
             input("Please choose a valid option\nPress [enter] to continue...")
 
+
     # Dealer Turn (This should always be last)
     while dealer.turn == True:
         d_total = dealer.get_total()
         print(f"Dealer has: {d_total}")
+
         if d_total > 16:
             dealer.stay()
             print(f"Dealer stays at: {dealer.get_total()}")
@@ -59,7 +59,6 @@ while dealer.turn == True or player1.turn == True:
                 print(f"Dealer BUSTED with {dealer.get_total()}")
                 dealer.hand = []
                 dealer.stay()
-
 
     dealer_hand = dealer.get_total()
     player1_hand = player1.get_total()
