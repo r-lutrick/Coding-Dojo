@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Table</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <table>
+        <tr class="header">
+            <th>
+                <h2>First Name</h2>
+            </th>
+            <th>
+                <h2>Last Name</h2>
+            </th>
+            <th>
+                <h2>Full Name</h2>
+            </th>
+        </tr>
+        {%for dict in list%}
+        <tr id="bodystuff"> 
+            <td>{{dict.first_name}}</td>
+            <td>{{dict.last_name}}</td>
+            <td>{{dict.first_name}} {{dict.last_name}}</td>
+        </tr>
+        {%endfor%}
+    </table>
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+
+</html>
