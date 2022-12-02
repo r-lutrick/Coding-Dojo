@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.buttons {
+    flex-direction: row;
+}
+
+#breakingpoint {
+    margin: 10px auto;
+}
+
+input {
+    font-size: 20px;
+    padding: 2px 5px;
+}
