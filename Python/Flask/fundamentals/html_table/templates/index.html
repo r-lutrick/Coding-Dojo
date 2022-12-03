@@ -11,6 +11,7 @@
 
 <body>
     <table>
+
         <tr class="header">
             <th>
                 <h2>First Name</h2>
@@ -22,13 +23,15 @@
                 <h2>Full Name</h2>
             </th>
         </tr>
+
         {%for dict in list%}
-        <tr id="bodystuff"> 
+        <tr class="bodystuff">
             <td>{{dict.first_name}}</td>
             <td>{{dict.last_name}}</td>
             <td>{{dict.first_name}} {{dict.last_name}}</td>
         </tr>
         {%endfor%}
+        
     </table>
     <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
