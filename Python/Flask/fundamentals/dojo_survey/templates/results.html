@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container w-50 bg-secondary text-white">
+        <h1 class="text-warning">Dojo Results</h1>
+        <ul class="list-group list-group-flush">
+            <li class="list-group-item">Name: {{ session['name'] }}</li>
+            <li class="list-group-item">Location: {{ session['location'] }}</li>
+            <li class="list-group-item">Favorite Language: {{ session['language'] }}</li>
+            <li class="list-group-item">Comments: {{ session['comments'] }}</li>
+        </ul>
+        <a href="/" class="btn btn-link">Home</a>
+    </div>
+</body>
+
+</html>
