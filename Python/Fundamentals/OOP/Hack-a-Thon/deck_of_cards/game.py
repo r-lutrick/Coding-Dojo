@@ -17,7 +17,7 @@ while dealer.turn == True or player1.turn == True:
     # Start the game
     print("======- Dealers hand -======")
     dealer.display_hand()
-    print(f"Dealer has: {dealer.get_total()}")
+    print(f"Dealer: {dealer.get_total()}")
     print("============================\n\n")
 
     # Player 1 turn
@@ -33,7 +33,7 @@ while dealer.turn == True or player1.turn == True:
 
         # Check for BlackJack and Win
         if (player1.get_total() == 21):
-            print(f"BLACKJACK with {player1.get_total()}\n")
+            print(f"BLACKJACK!!! {player1.get_total()}\n")
             player1.hand = []
             player1.stay()
         else:
@@ -50,21 +50,21 @@ while dealer.turn == True or player1.turn == True:
 
                 # Check for bust
                 if new_hand > 21:
-                    print(f"Player BUSTED with {player1.get_total()}\n")
+                    print(f"Player BUSTED! {player1.get_total()}\n")
                     # Resets for future use
                     player1.hand = []
                     player1.stay()
 
                 # Check for BlackJack
                 if new_hand == 21:
-                    print(f"BLACKJACK with {player1.get_total()}\n")
+                    print(f"BLACKJACK! {player1.get_total()}\n")
                     # Resets for future use
                     player1.hand = []
                     player1.stay()
             # Stay
             elif choice == "2":
                 player1.stay()
-                print(f"Staying at: {player1.get_total()}\n")
+                print(f"Staying: {player1.get_total()}\n")
             # Default
             else:
                 input(
@@ -78,18 +78,18 @@ while dealer.turn == True or player1.turn == True:
         # Dealer must stay past 16 points
         if d_total > 16:
             dealer.stay()
-            print(f"Dealer stays at: {dealer.get_total()}")
+            print(f"Dealer stays: {dealer.get_total()}")
         else:
             # Get, display and add card to hand
             random_card = bicycle.deal_card()
-            print(f"Dealer has: {d_total}")
+            print(f"Dealer: {d_total}")
             dealer.hit(random_card)
             # Dealt card
             print(
-                f"Dealer gets {random_card.string_val} of {random_card.suit}")
+                f"Dealer gets {random_card.string_val} {random_card.suit}")
             # Evaluate if card total value is Bust
             if dealer.get_total() > 21:
-                print(f"Dealer BUSTED with {dealer.get_total()}")
+                print(f"Dealer BUSTED! {dealer.get_total()}")
                 # Resets for future use
                 dealer.hand = []
                 dealer.stay()

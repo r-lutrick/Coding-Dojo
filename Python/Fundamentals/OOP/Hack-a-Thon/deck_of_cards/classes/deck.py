@@ -4,7 +4,7 @@ import random
 
 class Deck:
     def __init__(self):
-        suits = ["spades", "hearts", "clubs", "diamonds"]
+        suits = ["♠️", "♥️", "♣️", "♦️"]
         self.cards = []
 
         for s in suits:

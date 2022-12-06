@@ -12,4 +12,4 @@ class Card:
         self.string_val = string_val
 
     def card_info(self):
-        print(f"{self.string_val} of {self.suit}")
+        print(f"{self.string_val} {self.suit}")
