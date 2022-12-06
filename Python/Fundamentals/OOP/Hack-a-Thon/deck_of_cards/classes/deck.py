@@ -1,13 +1,14 @@
 from . import card
 import random
 
+
 class Deck:
-    def __init__( self ):
-        suits = [ "spades" , "hearts" , "clubs" , "diamonds" ]
+    def __init__(self):
+        suits = ["spades", "hearts", "clubs", "diamonds"]
         self.cards = []
 
         for s in suits:
-            for i in range(1,14):
+            for i in range(1, 14):
                 str_val = ""
                 if i == 1:
                     str_val = "Ace"
@@ -19,15 +20,13 @@ class Deck:
                     str_val = "King"
                 else:
                     str_val = str(i)
-                self.cards.append( card.Card( s , i , str_val ) )
+                self.cards.append(card.Card(s, i, str_val))
 
     def show_cards(self):
         for card in self.cards:
             card.card_info()
 
-    def deal_card (self):
+    def deal_card(self):
         selected_card = random.choice(self.cards)
         self.cards.remove(selected_card)
         return selected_card
-
-
