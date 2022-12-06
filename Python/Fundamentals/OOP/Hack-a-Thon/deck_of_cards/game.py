@@ -99,7 +99,9 @@ while dealer.turn == True or player1.turn == True:
     player1_hand = player1.get_total()
 
     # Game decision
-    if dealer_hand > player1_hand:
+    if dealer_hand == player1_hand:
+        print("\n\t=== You Push ===\n")
+    elif dealer_hand > player1_hand:
         print(f"\n\t... You Lose ...\n")
     elif dealer_hand < player1_hand:
         print(f"\n\t!!! You WIN !!!\n")
