@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkerboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        {% for row in range(rows) %}
+        <div class="row">
+            <!-- if row is odd: -->
+            {% if row % 2 == 1 %}
+            <!-- for col in cols -->
+            {% for col in range(cols) %}
+            <!-- if col is even: black -->
+            {% if col % 2 == 0 %}
+            <div class="box" style="background-color: black;"></div>
+            {% endif %}
+            <!-- if col is odd: red -->
+            {% if col % 2 == 1 %}
+            <div class="box"></div>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+
+            <!-- if row is even -->
+            {% if row % 2 == 0 %}
+            <!-- for col in cols -->
+            {% for col in range(cols) %}
+            <!-- if col is even: black -->
+            {% if col % 2 == 1 %}
+            <div class="box" style="background-color: black;"></div>
+            {% endif %}
+            <!-- if col is odd: red -->
+            {% if col % 2 == 0 %}
+            <div class="box"></div>
+            {% endif %}
+            {% endfor %}
+            {% endif %}
+        </div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
