@@ -11,6 +11,7 @@ class Player:
 
     def hit(self, card):
         if (card.string_val == "Ace"):
+            card.card_info()
             choice = input("[1]Low or [2]High\n> ")
             if (choice == "2"):
                 card.point_val = 11

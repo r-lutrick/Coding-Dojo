@@ -34,7 +34,6 @@ while dealer.turn == True or player1.turn == True:
         # Check for BlackJack and Win
         if (player1.get_total() == 21):
             print(f"BLACKJACK!!! {player1.get_total()}\n")
-            player1.hand = []
             player1.stay()
         else:
             choice = input("[1]Hit or [2]Stay:\n> ")
@@ -51,15 +50,13 @@ while dealer.turn == True or player1.turn == True:
                 # Check for bust
                 if new_hand > 21:
                     print(f"Player BUSTED! {player1.get_total()}\n")
-                    # Resets for future use
+                    # Fold hand on Bust
                     player1.hand = []
                     player1.stay()
 
                 # Check for BlackJack
                 if new_hand == 21:
                     print(f"BLACKJACK! {player1.get_total()}\n")
-                    # Resets for future use
-                    player1.hand = []
                     player1.stay()
             # Stay
             elif choice == "2":
@@ -90,7 +87,7 @@ while dealer.turn == True or player1.turn == True:
             # Evaluate if card total value is Bust
             if dealer.get_total() > 21:
                 print(f"Dealer BUSTED! {dealer.get_total()}")
-                # Resets for future use
+                # Fold hand on Bust
                 dealer.hand = []
                 dealer.stay()
 
@@ -106,4 +103,4 @@ while dealer.turn == True or player1.turn == True:
     elif dealer_hand < player1_hand:
         print(f"\n\t!!! You WIN !!!\n")
     else:
-        print("\n\t=== You Push ===\n")
+        print("\n\t??? No result ???\n")
