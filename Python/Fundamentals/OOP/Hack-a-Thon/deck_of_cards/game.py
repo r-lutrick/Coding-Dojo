@@ -6,7 +6,7 @@ dealer = player.Dealer("DeanTheDealer")
 player1 = player.Player("JimBob")
 
 # Deal cards
-# Eventually the 2 will be replaced with num_of_players
+# 2 is starting number of cards
 for i in range(2):
     dealer.hit(bicycle.deal_card())
     player1.hit(bicycle.deal_card())
@@ -47,25 +47,23 @@ while dealer.turn == True or player1.turn == True:
                 # Evaluate total value of cards in hand
                 new_hand = player1.get_total()
 
-                # Check for bust
-                if new_hand > 21:
-                    print(f"Player BUSTED! {player1.get_total()}\n")
+                # Checks
+                if new_hand > 21:  # Bust
+                    print(f"BUSTED! {player1.get_total()}\n")
                     # Fold hand on Bust
                     player1.hand = []
                     player1.stay()
 
-                # Check for BlackJack
-                if new_hand == 21:
+                if new_hand == 21:  # BlackJack
                     print(f"BLACKJACK! {player1.get_total()}\n")
                     player1.stay()
             # Stay
             elif choice == "2":
                 player1.stay()
-                print(f"Staying: {player1.get_total()}\n")
+                print(f"Staying... {player1.get_total()}\n")
             # Default
             else:
-                input(
-                    "Please choose a valid option\nPress [enter] to continue...")
+                input("Choose a valid option\nPress [enter] to continue...")
 
     # Dealer Turn (This should always be last)
     while dealer.turn == True:
@@ -76,14 +74,15 @@ while dealer.turn == True or player1.turn == True:
         if d_total > 16:
             dealer.stay()
             print(f"Dealer stays: {dealer.get_total()}")
+        # Dealer must hit below 16 points
         else:
-            # Get, display and add card to hand
+            # Get, add and display card
             random_card = bicycle.deal_card()
-            print(f"Dealer: {d_total}")
             dealer.hit(random_card)
             # Dealt card
-            print(
-                f"Dealer gets {random_card.string_val} {random_card.suit}")
+            print(f"Dealer gets {random_card.card_info()}")
+            print(f"Total: {d_total}")
+
             # Evaluate if card total value is Bust
             if dealer.get_total() > 21:
                 print(f"Dealer BUSTED! {dealer.get_total()}")
@@ -96,11 +95,11 @@ while dealer.turn == True or player1.turn == True:
     player1_hand = player1.get_total()
 
     # Game decision
-    if dealer_hand == player1_hand:
-        print("\n\t=== You Push ===\n")
+    if dealer_hand < player1_hand:
+        print(f"\n\t!!! You WIN !!!\n")
     elif dealer_hand > player1_hand:
         print(f"\n\t... You Lose ...\n")
-    elif dealer_hand < player1_hand:
-        print(f"\n\t!!! You WIN !!!\n")
+    elif dealer_hand == player1_hand:
+        print("\n\t=== You Push ===\n")
     else:
         print("\n\t??? No result ???\n")
